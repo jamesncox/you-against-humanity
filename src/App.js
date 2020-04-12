@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { connect } from 'react-redux'
-import { getCards } from './actions/cards'
+import { getCards, getTypes } from './actions/cards'
 
 class App extends Component {
   componentDidMount() {
-    this.props.getCards()
+    // this.props.getCards()
+    this.props.getTypes()
   }
 
   render() {
@@ -31,4 +32,4 @@ class App extends Component {
   }
 }
 
-export default connect(null, { getCards })(App)
+export default connect(null, { getCards, getTypes })(App)

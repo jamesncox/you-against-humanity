@@ -34,7 +34,7 @@ export const getTypes = () => {
     return async dispatch => {
         // dispatch({ type: LOADING_CARDS })
         try {
-            const res = await fetch("https://cah.greencoaststudios.com/api/v1/types")
+            const res = await fetch("https://cah.greencoaststudios.com/api/v1/official")
             if (!res.ok) {
                 throw res
             }

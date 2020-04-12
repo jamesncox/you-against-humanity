@@ -1,0 +1,7 @@
+const LOADING_CARDS = 'LOADING_CARDS'
+const SET_CARDS = 'SET_CARDS'
+
+export {
+    LOADING_CARDS,
+    SET_CARDS
+}

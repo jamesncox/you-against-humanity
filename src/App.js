@@ -6,8 +6,8 @@ import { getCards, getTypes } from './actions/cards'
 
 class App extends Component {
   componentDidMount() {
-    // this.props.getCards()
-    this.props.getTypes()
+    this.props.getCards()
+    // this.props.getTypes()
   }
 
   render() {

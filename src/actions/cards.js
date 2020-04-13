@@ -17,7 +17,7 @@ export const getCards = () => {
     return async dispatch => {
         // dispatch({ type: LOADING_CARDS })
         try {
-            const res = await fetch("https://crhallberg.com/cah/output.php")
+            const res = await fetch("https://cah.greencoaststudios.com/api/v1/official/absurd_box_expansion")
             if (!res.ok) {
                 throw res
             }
